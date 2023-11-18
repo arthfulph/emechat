@@ -177,7 +177,7 @@ function onSendChannelStateChange() {
 }
 function fetchNextUser(remoteUser) {
   $.post(
-    "https://omechat.herokuapp.com/get-next-user",
+    "https://emechat.onrender.com/get-next-user",
     { omeID: omeID, remoteUser: remoteUser },
     function (data) {
       console.log("Next user is: ", data);
