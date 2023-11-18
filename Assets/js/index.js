@@ -45,7 +45,7 @@ let init = async () => {
     audio: true,
   });
   document.getElementById("user-1").srcObject = localStream;
-  $.post("https://omechat.herokuapp.com/get-remote-users", { omeID: omeID })
+  $.post("https://emechat.onrender.com/get-remote-users", { omeID: omeID })
     .done(function (data) {
       console.log("Remoteuser id from Init() /get-remote-users: ", data[0]._id);
       if (data[0]) {
